@@ -1,8 +1,8 @@
 from flask import Flask,render_template,request
 import pickle
 
-cv = pickle.load(open("model/vectorizer.pkl","rb"))
-clf = pickle.load(open("model/model.pkl","rb"))
+cv = pickle.load(open("vectorizer.pkl","rb"))
+clf = pickle.load(open("model.pkl","rb"))
 
 
 app = Flask(__name__)
